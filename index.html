@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="de">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schere, Stein, Papier</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>-- Schere -- Stein -- Papier --</h1>
+    </header>
+    <main>
+        <div class="buttonsPlayer">
+            <div class="smileyDiv">
+                <p>Wähle deine Waffe&nbsp;</p>
+                <img class="smiley" src="icons/smiley.png" alt="">
+            </div>
+            <button type="button" class="scissors" id="scissors" value="1" onclick="game(className)"><img
+                    src="icons/scissors.png" alt="schere"></button>
+            <button type="button" class="stone" id="stone" value="2" onclick="game(className)"><img
+                    src="icons/stone.png" alt="stein"></button>
+            <button type="button" class="paper" id="paper" value="3" onclick="game(className)"><img
+                    src="icons/paper.png" alt="papier"></button>
+        </div>
+        <div class="playground">
+            <p id="palyerPoints">Player: 0</p>
+            <p id="computerPoints">Computer: 0</p>
+        </div>
+        <div class="playgroundIcons">
+            <img id="playerImg" src="icons/faq.png" alt="?">
+            <p>VS.</p>
+            <img id="computerImg" src="icons/faq.png" alt="?">
+        </div>
+        <div class="round">
+            <p id="rounds">Runde 0</p>
+            <p>&nbsp;ist&nbsp;</p>
+            <p id="commend">nicht gespielt.</p>
+        </div>
+        <div class="gameEnde">
+            <p id="endText">&nbsp;</p>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,102 @@
+ * {
+     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+     font-size: 2vw;
+     color: white;
+     text-shadow: black 0.1em 0.1em 0.2em;
+ }
+
+ html {
+     background-color: white;
+ }
+
+ body {
+     margin: 0.5em auto;
+     padding: 0.1em;
+     background: rgb(69, 248, 170);
+     background: linear-gradient(90deg, rgba(69, 248, 170, 1) 0%, rgba(3, 132, 215, 1) 100%);
+     max-width: 90vw;
+     -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0.2em 0.2em);
+     filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0.2em 0.2em);
+ }
+
+ .buttonsPlayer,
+ .playground {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-around;
+     align-items: center;
+     margin: 0em 0em;
+ }
+
+ .playgroundIcons,
+ .gameEnde {
+     display: flex;
+     flex-direction: row;
+     justify-content: space-evenly;
+     align-items: center;
+     margin: 0em 0em;
+ }
+
+ .round {
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+     align-items: center;
+     margin: 0em 0em;
+ }
+
+ button img:hover {
+     animation-name: hovering;
+     animation-duration: 1s;
+     animation-iteration-count: infinite;
+     animation-timing-function: ease-in-out;
+ }
+
+ h1 {
+     text-align: center;
+     font-size: 200%;
+ }
+
+ p {
+     margin: 0.5em 0;
+ }
+
+ button {
+     padding: 0;
+     border: 0;
+     background-color: transparent;
+ }
+
+ img {
+     width: 10vw;
+     height: auto;
+     -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0.1em 0.2em);
+     filter: drop-shadow(rgba(0, 0, 0, 0.4) 0.4em 0.4em 0.08em);
+ }
+
+ .smileyDiv {
+     display: flex;
+     flex-direction: row;
+     align-items: flex-end;
+ }
+
+ [class|=smiley] {
+     width: 5vw;
+     height: auto;
+     -webkit-filter: drop-shadow(rgba(0, 0, 0, 0.5) 0px 0.1em 0.2em);
+     filter: drop-shadow(rgba(0, 0, 0, 0.4) 0.4em 0.4em 0.08em);
+ }
+
+ @keyframes hovering {
+     from {
+         transform: translate(0, 0px);
+     }
+
+     50% {
+         transform: translate(0, -10px);
+     }
+
+     to {
+         transform: translate(0, -0px);
+     }
+ }
